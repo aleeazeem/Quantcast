@@ -36,7 +36,12 @@ chmod +x run_all.sh
 ## Testing
 Run all tests: ```pytest -v```
 
-Run tests with coverage: ```pytest --cov=src tests/```
+Run tests with coverage: 
+```
+pip install pytest-cov
+pytest --cov=src tests/
+```
+
 
 ---
 
@@ -48,7 +53,7 @@ Fromat: YYYY-MM-DD HH:MM:SS [Log Level] Log Text
 ```
 2025-10-24 14:10:01 [INFO] Processed file ./data/cookie_log.csv for date 2018-12-09: 1 most active cookie found
 2025-10-24 14:11:02 [ERROR] File not found: ./data/missing_file.csv
-2025-10-24 14:12:05 [WARNING] Execution interrupted by user (Ctrl+C)
+2025-10-24 14:12:05 [WARNING] Execution interrupted
 ```
 
 ---
